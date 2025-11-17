@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Marianos Builder</title>
+        <link rel="stylesheet" href="css/estilo.css" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="favicon/favicon-16x16.png"
+        />
+        <link
+            rel="manifest"
+            href="favicon/site.webmanifest"
+            referrerpolicy="no-referrer"
+        />
+        <script src="js/script.js"></script>
+    </head>
+
+    <body>
+        <div class="fundo-roxo">
+            <div class="clash-logo" id="topo">
+                <img src="imagens/clash-logo.png" alt="" />
+            </div>
+
+            <div class="conteúdo">
+                <h1>Marianos Builder</h1>
+
+                <div class="conteúdo-principal">
+                    <div class="container-principal">
+                        <div class="slide-container">
+                            Média de
+                            <span class="texto-roxo"
+                                >Elixir
+                                <img
+                                    class="elixir-ícone"
+                                    src="imagens/elixir.webp"
+                                    alt=""
+                            /></span>
+                            <input
+                                type="range"
+                                min="1"
+                                max="9"
+                                value="1"
+                                step="0.1"
+                                class="slider"
+                                id="posiçãoSlider"
+                            />
+                            <span id="elixirSlider" class="bold"></span>
+                        </div>
+
+                        <div class="custoMáximo-container slide-container">
+                            Máximo de
+                            <span class="texto-roxo"
+                                >Elixir
+                                <img
+                                    class="elixir-ícone"
+                                    src="imagens/elixir.webp"
+                                    alt=""
+                            /></span>
+                            por Carta
+                            <br />
+                            <input
+                                type="range"
+                                min="1"
+                                max="9"
+                                value="6"
+                                step="1"
+                                class="slider"
+                                id="máximoSlider"
+                                autofocus
+                            />
+                            <span id="elixirSliderCarta" class="bold"></span>
+                        </div>
+                        <hr />
+                    </div>
+
+                    <div class="resultado-container">
+                        <div id="spinner" class="spinner oculto"></div>
+                        <div class="lista-resultado"></div>
+
+                        <div class="para-o-topo">
+                            <a href="#topo" class="topo-link">⬆️</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
